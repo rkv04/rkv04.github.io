@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test page</title>
+    <meta name="description" content="Изучение возможностей HTML и CSS">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content-container">
+        <h3 class="first-letter">Пример таблицы</h3>
+        <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th>Страна</th>
+                    <th>Население</th>
+                    <th>Площадь</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Россия</td>
+                    <td>150 млн. человек</td>
+                    <td>17,1 млн км^2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Пример маркированного списка</h3>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C++</li>
+        </ul>
+        
+        <h3>Пример изображения (тег img)</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/2867/2867342.png" width="300px">
+
+        <h3>Изображение меняется при ширине экрана < 1000px (тег picture + source) </h3>
+        <picture>
+            <source srcset="https://blog.4linux.com.br/wp-content/uploads/2018/03/Melhor-Curso-de-HTML5-e-CSS3.png" media="(max-width: 1000px)">
+            <source srcset="https://cdn-icons-png.flaticon.com/512/2867/2867342.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/2867/2867342.png" width="300px">
+          </picture>
+
+        <h3>Применение transform</h3>
+        <img class="transform-img" src="https://cdn-icons-png.flaticon.com/512/2867/2867342.png" width="300px">
+
+        <h3>Применение transition (при наведении курсора)</h3>
+        <img class="transition-img" src="https://cdn-icons-png.flaticon.com/512/2867/2867342.png">
+
+        <h3>Применение @keyframes</h3>
+        <img class="animated-img" src="https://svgsilh.com/svg/25777.svg">
+    
+        <h3>Пример встроенной страницы (iframe)</h3>
+        <iframe src="https://git-scm.com/"></iframe>
+
+        <h3>Применение медиа-запросов (при ширине экрана < 700px происходит перестроение элементов)</h3>
+        <div class="media-example-container">
+            <div class="media-example-block"></div>
+            <div class="media-example-block"></div>
+        </div>
+
+    </div>
+</body>
+</html>
